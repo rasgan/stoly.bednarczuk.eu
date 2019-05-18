@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="pl">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/fullpage.js"></script>
+    <script type="text/javascript" src="js/popper.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <title>marek bednarczuk - programista aplikacji i stron internetowych</title>
+    <meta name="description" content="Najwyższej jakości nowoczesne stoły i meble wykonane dla Ciebie." />
+    <meta name="keywords" content="stół, stoły, meble z żywicy, drewno, żywica, meble na zamówienie, stoły z żywicy, blaty" />
+    <link rel="canonical" href="http://stoly.bednarczuk.eu">
+    <link rel="shortcut icon" href="img/favicon.png">
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+
+                sectionsColor: ['#282828', '#282828', '#282828', '#282828', '#282828'],
+
+                //Navigation
+                anchors: ['start', 'o-nas', 'realizacje', 'kontakt'],
+                menu: '#menu',
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['start', 'o-nas', 'realizacje', 'kontakt'],
+                showActiveTooltip: false,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+
+                //Scrolling
+                css3: false,
+                scrollingSpeed: 700,
+                autoScrolling: true,
+                fitToSection: true,
+                fitToSectionDelay: 1000,
+                scrollBar: false,
+                easing: 'easeInOutCubic',
+                easingcss3: 'ease',
+                loopBottom: false,
+                loopTop: false,
+                loopHorizontal: true,
+                continuousVertical: false,
+                normalScrollElements: '#element1, .element2',
+                scrollOverflow: false,
+                touchSensitivity: 15,
+                normalScrollElementTouchThreshold: 5,
+
+                //Accessibility
+                keyboardScrolling: true,
+                animateAnchor: true,
+                recordHistory: true,
+
+                //Design
+                controlArrows: true,
+                verticalCentered: true,
+                resize: true,
+                paddingTop: '3em',
+                paddingBottom: '10px',
+                fixedElements: '#header, .footer',
+                responsiveWidth: 0,
+                responsiveHeight: 0,
+
+                //Custom selectors
+                sectionSelector: '.section',
+                slideSelector: '.slide'
+
+            });
+        });
+    </script>
+
+</head>
+
+
+<body>
+
+    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg" role="navigation">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <a class="navbar-brand mr-auto" href="/" title="Strona główna">Stoły - Bednarczuk.EU</a>
+
+                <ul id="menu" class="navbar-nav">
+                    <li data-menuanchor="start" class="nav-item">
+                        <a href="/" class="nav-link">Start
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                    <li data-menuanchor="o-nas" class="nav-item">
+                        <a href="#o-nas" class="nav-link">O nas</a>
+                    </li>
+                    <li data-menuanchor="realizacje" class="nav-item">
+                        <a href="#realizacje" class="nav-link">Realizacje</a>
+                    </li>
+                    <li data-menuanchor="kontakt" class="nav-item">
+                        <a href="#kontakt" class="nav-link">Kontakt</a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <div id="fullpage">
+
+        <!-- Section INTRO -->
+        <div class="section" id="sekcja-start">
+            <div class="container text-center">
+                <h2>Nasze stoły
+                <h4>Takiego stołu nie ma nikt inny</h4>
+                <h4>Ale ten może być twój</h4>
+            </div>
+        </div>
+
+        <!-- Section O MNIE -->
+        <div class="section" id="sekcja-o-nas">
+            <div class="container text-center">
+                <p>Przygodę z meblami (a zwłaszcza ze stołami) rozpoczęliśmy już w latach '90 poprzedniego wieku.</p>
+
+                <p>Lata doświadczeń, miłość do drewna i zamiłowanie do nowych technologii pozwoliły nam stworzyć coś unikatowego, coś czego nie da się skopiować.</p>
+
+                <p>Tworzymy najwyższej jakości stoły i meble łączące w sobie piękno drewno z nowoczesnością i wytrzymałością żywic.</p>
+
+            </div>
+        </div>
+
+        <!-- Section PORTFOLIO -->
+        <div class="section" id="sekcja-realizacje">
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_1.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_2.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_3.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_1.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_2.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_3.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_1.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_2.jpg);">  </div>
+            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_3.jpg);">  </div>
+        </div>
+
+        <!-- Section KONTAKT -->
+        <div class="section" id="sekcja-kontakt">
+
+            <div class="container text-center">
+                <p>Chciał(a)byś być posiadaczem niesamowitego stołu?
+                    <br/> Marzy ci się blat jakiego nie ma nikt inny?
+                    <br/> Twoja kawa ma dość nudnej ławy w salonie?
+                    <br/> Jesteś w odpowiednim miejscu. Zapraszam do kontaktu.
+                </p>
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <a href="/">
+                        &copy; 2019 WPPU Bewa Jerzy Bednarczuk
+                    </a>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
