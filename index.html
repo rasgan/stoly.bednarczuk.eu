@@ -10,7 +10,8 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/fullpage.js"></script>
@@ -30,12 +31,12 @@
                 sectionsColor: ['#282828', '#282828', '#282828', '#282828', '#282828'],
 
                 //Navigation
-                anchors: ['start', 'o-nas', 'realizacje', 'kontakt'],
+                anchors: ['start', 'realizacje', 'uslugi', 'o-nas', 'kontakt'],
                 menu: '#menu',
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['start', 'o-nas', 'realizacje', 'kontakt'],
-                showActiveTooltip: false,
+                navigationTooltips: ['start', 'realizacje', 'uslugi', 'o-nas', 'kontakt'],
+                showActiveTooltip: true,
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom',
 
@@ -85,7 +86,7 @@
 
 <body>
 
-    <nav class="navbar fixed-top navbar-dark bg-dark navbar-expand-lg" role="navigation">
+    <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
         <div class="container">
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -95,19 +96,22 @@
 
             <div class="collapse navbar-collapse" id="navbarNav">
 
-                <a class="navbar-brand mr-auto" href="/" title="Strona główna">Stoły - Bednarczuk.EU</a>
+                <a class="navbar-brand mr-auto" href="/" title="Strona główna">Bednarczuk&mdash;</a>
 
                 <ul id="menu" class="navbar-nav">
                     <li data-menuanchor="start" class="nav-item">
-                        <a href="/" class="nav-link">Start
+                        <a href="/" class="nav-link">
                             <span class="sr-only">(current)</span>
                         </a>
                     </li>
-                    <li data-menuanchor="o-nas" class="nav-item">
-                        <a href="#o-nas" class="nav-link">O nas</a>
-                    </li>
                     <li data-menuanchor="realizacje" class="nav-item">
                         <a href="#realizacje" class="nav-link">Realizacje</a>
+                    </li>
+                    <li data-menuanchor="uslugi" class="nav-item">
+                        <a href="#uslugi" class="nav-link">Uslugi</a>
+                    </li>
+                    <li data-menuanchor="o-nas" class="nav-item">
+                        <a href="#o-nas" class="nav-link">O nas</a>
                     </li>
                     <li data-menuanchor="kontakt" class="nav-item">
                         <a href="#kontakt" class="nav-link">Kontakt</a>
@@ -125,9 +129,28 @@
         <!-- Section INTRO -->
         <div class="section" id="sekcja-start">
             <div class="container text-center">
-                <h2>Nasze stoły
-                <h4>Takiego stołu nie ma nikt inny</h4>
-                <h4>Ale ten może być twój</h4>
+                <h1>Jeśli nie stół<br/>
+                    to co?</h1>
+            </div>
+        </div>
+
+        <!-- Section PORTFOLIO -->
+        <div class="section" id="sekcja-realizacje">
+            
+        </div>
+
+        <!-- Section uslugi -->
+        <div class="section" id="sekcja-uslugi">
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-sm"></div>
+                    <div class="col-sm-5">
+                        <div class="container">
+                            <h1 >Usługi</h1>
+                            <p>Lordem ipsum srutututu kjdaslk dalka kljasldkjalsdioj aslkjdlaksjd laksjd al aljdlakjdlkaj dalkj dalkjd alkjda sdlaskdlkjas dlkaj sdlkaj dlkajsdlkja dlkajdla dalkjadl</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -141,19 +164,6 @@
                 <p>Tworzymy najwyższej jakości stoły i meble łączące w sobie piękno drewno z nowoczesnością i wytrzymałością żywic.</p>
 
             </div>
-        </div>
-
-        <!-- Section PORTFOLIO -->
-        <div class="section" id="sekcja-realizacje">
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_1.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_2.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/1_3.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_1.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_2.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/2_3.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_1.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_2.jpg);">  </div>
-            <div class="slide" id="gall_1_1" style="background-image: url(gallery/3_3.jpg);">  </div>
         </div>
 
         <!-- Section KONTAKT -->
