@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/fullpage.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/lightbox.css" />
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
 
@@ -17,14 +18,21 @@
     <script type="text/javascript" src="js/fullpage.js"></script>
     <script type="text/javascript" src="js/popper.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/lightbox.js"></script>
 
     <title>marek bednarczuk - programista aplikacji i stron internetowych</title>
     <meta name="description" content="Najwyższej jakości nowoczesne stoły i meble wykonane dla Ciebie." />
-    <meta name="keywords" content="stół, stoły, meble z żywicy, drewno, żywica, meble na zamówienie, stoły z żywicy, blaty" />
+    <meta name="keywords"
+        content="stół, stoły, meble z żywicy, drewno, żywica, meble na zamówienie, stoły z żywicy, blaty" />
     <link rel="canonical" href="http://stoly.bednarczuk.eu">
-    <link rel="shortcut icon" href="img/favicon.png">
-    
+    <link rel="shortcut icon" href="favicon.jpg" />
+
     <script type="text/javascript">
+
+        lightbox.option({
+            'wrapAround': true
+        });
+
         $(document).ready(function () {
             $('#fullpage').fullpage({
 
@@ -36,7 +44,7 @@
                 navigation: true,
                 navigationPosition: 'right',
                 navigationTooltips: ['start', 'realizacje', 'uslugi', 'o-nas', 'kontakt'],
-                showActiveTooltip: true,
+                showActiveTooltip: false,
                 slidesNavigation: true,
                 slidesNavPosition: 'bottom',
 
@@ -86,11 +94,14 @@
 
 <body>
 
+    <!----------------------------------------------------------------------------------------
+    # NAVBAR
+    -------------------------------------------------------------------------------------- -->
     <nav class="navbar fixed-top navbar-expand-lg" role="navigation">
         <div class="container">
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -126,65 +137,209 @@
 
     <div id="fullpage">
 
-        <!-- Section INTRO -->
+        <!----------------------------------------------------------------------------------------
+    # START
+    -------------------------------------------------------------------------------------- -->
         <div class="section" id="sekcja-start">
             <div class="container text-center">
-                <h1>Jeśli nie stół<br/>
+                <h1>Jeśli nie stół<br />
                     to co?</h1>
             </div>
         </div>
 
-        <!-- Section PORTFOLIO -->
+        <!----------------------------------------------------------------------------------------
+    # REALIZACJE
+    -------------------------------------------------------------------------------------- -->
         <div class="section" id="sekcja-realizacje">
-            
-        </div>
-
-        <!-- Section uslugi -->
-        <div class="section" id="sekcja-uslugi">
             <div class="container text-center">
-                <div class="row">
-                    <div class="col-sm"></div>
-                    <div class="col-sm-5">
-                        <div class="container">
-                            <h1 >Usługi</h1>
-                            <p>Lordem ipsum srutututu kjdaslk dalka kljasldkjalsdioj aslkjdlaksjd laksjd al aljdlakjdlkaj dalkj dalkjd alkjda sdlaskdlkjas dlkaj sdlkaj dlkajsdlkja dlkajdla dalkjadl</p>
+
+                <div class="slide" id="slide1" data-anchor="slide1">
+                    <h1>Realizacje</h1>
+                    <!--SLAJD 1 wiersz 1 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/1_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/1_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/1_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/1_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/1_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/1_3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">&nbsp;</div>
+                    </div>
+                    <!--SLAJD 1 wiersz 2 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/2_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/2_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/2_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/2_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/2_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/2_3.jpg" />
+                            </a>
                         </div>
                     </div>
                 </div>
+
+                <div class="slide" id="slide2" data-anchor="slide2">
+                    <h1>Realizacje</h1>
+                    <!--SLAJD 2 wiersz 1 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/3_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/3_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/3_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/3_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/3_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/3_3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">&nbsp;</div>
+                    </div>
+                    <!--SLAJD 2 wiersz 2 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/4_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/4_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/4_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/4_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/4_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/4_3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slide" id="slide3" data-anchor="slide3">
+                    <h1>Realizacje</h1>
+                    <!--SLAJD 3 wiersz 1 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/5_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/5_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/5_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/5_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/5_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/5_3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm">&nbsp;</div>
+                    </div>
+                    <!--SLAJD 3 wiersz 2 ----------------------------------------------------------------- -->
+                    <div class="row">
+                        <div class="col-sm">
+                            <a href="gallery/6_1.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/6_1.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/6_2.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/6_2.jpg" />
+                            </a>
+                        </div>
+                        <div class="col-sm">
+                            <a href="gallery/6_3.jpg" data-lightbox="roadtrip">
+                                <img src="gallery/6_3.jpg" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
 
-        <!-- Section O MNIE -->
+        <!----------------------------------------------------------------------------------------
+    # USŁUGI
+    -------------------------------------------------------------------------------------- -->
+        <div class="section" id="sekcja-uslugi">
+            <div class="kolumna">&nbsp</div>
+            <div class="kolumna-prawa">
+                <h1>Usługi</h1>
+                <p>Chcesz mieć piękny stół? Przyjdź do nas, zrobimy go dla ciebie.</p>
+                <p>Wykonujemy stoły będące połączeniem drewna, żywicy i metalu.</p>
+                <p>Wszystkie nasze stoły są dokładnie takie jak chcesz. Robimy je na zamówienie.</p>
+                <p>W każdej chcwili możesz nas odwiedzić i zobaczyć jak wygląda twój stół.</p>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+
+        <!----------------------------------------------------------------------------------------
+    # O MNIE
+    -------------------------------------------------------------------------------------- -->
         <div class="section" id="sekcja-o-nas">
-            <div class="container text-center">
-                <p>Przygodę z meblami (a zwłaszcza ze stołami) rozpoczęliśmy już w latach '90 poprzedniego wieku.</p>
 
-                <p>Lata doświadczeń, miłość do drewna i zamiłowanie do nowych technologii pozwoliły nam stworzyć coś unikatowego, coś czego nie da się skopiować.</p>
-
-                <p>Tworzymy najwyższej jakości stoły i meble łączące w sobie piękno drewno z nowoczesnością i wytrzymałością żywic.</p>
-
+            <div class="kolumna-lewa">
+                <h1>O nas</h1>
+                Przygodę z meblami (a zwłaszcza ze stołami) rozpoczęliśmy już w latach '90 poprzedniego wieku.<br />
+                Lata doświadczeń, miłość do drewna i zamiłowanie do nowych technologii pozwoliły nam stworzyć coś
+                unikatowego, coś czego nie da się skopiować.</br>
+                Tworzymy najwyższej jakości stoły i meble łączące w sobie piękno drewna z nowoczesnością i
+                wytrzymałością żywic.</p>
             </div>
+            <div class="kolumna">&nbsp</div>
+            <div style="clear: both"></div>
         </div>
 
-        <!-- Section KONTAKT -->
+        <!----------------------------------------------------------------------------------------
+    # KONTAKT
+    -------------------------------------------------------------------------------------- -->
         <div class="section" id="sekcja-kontakt">
 
-            <div class="container text-center">
-                <p>Chciał(a)byś być posiadaczem niesamowitego stołu?
-                    <br/> Marzy ci się blat jakiego nie ma nikt inny?
-                    <br/> Twoja kawa ma dość nudnej ławy w salonie?
-                    <br/> Jesteś w odpowiednim miejscu. Zapraszam do kontaktu.
-                </p>
+            <div style="width: 50%;" class="kolumna">&nbsp</div>
+            <div class="kolumna-prawa">
+                <h1>Kontakt</h1>
+                <strong>
+                    Wielobranżowe Przedsiębiorstwo<br />
+                    Produkcyjno Usługowe<br />
+                    BEWA Jerzy Bednarczuk<br />
+                </strong>
+                ul. Zielona 51<br />
+                43-190 Mikołów<br />
+                <br />
+                tel: <a href="callto:327797727">32 779 77 27</a><br />
+                <a href="callto:5020636 46">502 06 36 46</a><br />
+                email: <a href="mailto:bewa@bednarczuk.eu">bewa@bednarczuk.eu</a><br /><br />
             </div>
-
-            <footer class="footer">
-                <div class="container">
-                    <a href="/">
-                        &copy; 2019 WPPU Bewa Jerzy Bednarczuk
-                    </a>
-                </div>
-            </footer>
-
         </div>
 
     </div>
